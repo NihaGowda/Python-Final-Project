@@ -41,20 +41,45 @@
       "options": ["Large random arrays", "Nearly sorted arrays", "Huge datasets", "Graphs"],
       "answer": 1,
       "hint": "Few shifts needed."
+    },
+    {
+      "question": "Which sort repeatedly inserts the current element into the correct position?",
+      "options": ["Bubble Sort", "Insertion Sort", "Merge Sort", "Quick Sort"],
+      "answer": 1,
+      "hint": "Think card sorting."
+    },
+    {
+      "question": "Which algorithm selects the smallest element each pass?",
+      "options": ["Selection Sort", "Insertion Sort", "Merge Sort", "Quick Sort"],
+      "answer": 0,
+      "hint": "Finds minimum repeatedly."
+    },
+    {
+      "question": "Which sorting algorithm typically requires extra memory?",
+      "options": ["Bubble Sort", "Insertion Sort", "Merge Sort", "Selection Sort"],
+      "answer": 2,
+      "hint": "Uses extra arrays."
+    },
+    {
+      "question": "Which algorithm uses a pivot?",
+      "options": ["Insertion Sort", "Quick Sort", "Bubble Sort", "Selection Sort"],
+      "answer": 1,
+      "hint": "Partition based."
+    },
+    {
+      "question": "Which algorithm is simplest but inefficient for large data?",
+      "options": ["Bubble Sort", "Merge Sort", "Quick Sort", "Counting Sort"],
+      "answer": 0,
+      "hint": "Many swaps."
     }
   ],
 
   "medium": [
     {
       "question": "Why is Merge Sort stable?",
-      "options": [
-        "It swaps elements",
-        "Equal elements keep order",
-        "It is in-place",
-        "It uses recursion"
-      ],
+      "options": ["It swaps elements", "Equal elements keep order", "It is in-place", "It uses recursion"],
       "answer": 1,
-      "hint": "Look at merge step behavior."
+      "hint": "Merge step preserves order."
     },
     {
       "question": "Worst-case time complexity of Quick Sort?",
@@ -63,92 +88,85 @@
       "hint": "Unbalanced partitions."
     },
     {
-      "question": "Which algorithm minimizes number of swaps?",
+      "question": "Which algorithm minimizes swaps?",
       "options": ["Bubble", "Insertion", "Selection", "Merge"],
       "answer": 2,
-      "hint": "Swaps once per position."
+      "hint": "One swap per pass."
     },
     {
       "question": "Space complexity of Merge Sort?",
       "options": ["O(1)", "O(log n)", "O(n)", "O(n^2)"],
       "answer": 2,
-      "hint": "Extra array needed."
+      "hint": "Extra array used."
     },
     {
-      "question": "Which algorithm uses a pivot?",
+      "question": "Which algorithm uses a pivot element?",
       "options": ["Merge", "Quick", "Insertion", "Bubble"],
       "answer": 1,
-      "hint": "Partition-based."
+      "hint": "Partitioning."
     },
     {
-      "question": "Why Quick Sort is fast in practice?",
-      "options": [
-        "Stable",
-        "Low constant factors",
-        "No recursion",
-        "Always balanced"
-      ],
+      "question": "Why is Quick Sort fast in practice?",
+      "options": ["Always stable", "Low constant factors", "No recursion", "Always balanced"],
       "answer": 1,
-      "hint": "Not theoretical, practical reason."
+      "hint": "Cache-friendly."
+    },
+    {
+      "question": "Which algorithm guarantees O(n log n) average time?",
+      "options": ["Insertion", "Bubble", "Merge", "Selection"],
+      "answer": 2,
+      "hint": "Divide and conquer."
+    },
+    {
+      "question": "What does in-place sorting mean?",
+      "options": ["No recursion", "Constant extra space", "Stable sort", "Uses heap"],
+      "answer": 1,
+      "hint": "Memory usage."
     }
   ],
 
   "hard": [
     {
       "question": "When does Quick Sort degrade to O(n^2)?",
-      "options": [
-        "Balanced pivot",
-        "Random data",
-        "Already sorted data",
-        "Small input"
-      ],
+      "options": ["Balanced pivot", "Random data", "Already sorted input", "Small input"],
       "answer": 2,
       "hint": "Worst pivot choice."
     },
     {
-      "question": "Why Merge Sort is preferred for linked lists?",
-      "options": [
-        "In-place",
-        "Sequential access",
-        "Less memory",
-        "No recursion"
-      ],
+      "question": "Why is Merge Sort preferred for linked lists?",
+      "options": ["In-place", "Sequential access", "Less memory", "No recursion"],
       "answer": 1,
-      "hint": "No random access required."
+      "hint": "No random access."
     },
     {
-      "question": "Which sort is NOT stable?",
+      "question": "Which sorting algorithm is NOT stable?",
       "options": ["Merge", "Insertion", "Selection", "Bubble"],
       "answer": 2,
       "hint": "Swaps break order."
     },
     {
-      "question": "Which algorithm has guaranteed O(n log n)?",
+      "question": "Which algorithm guarantees O(n log n) in worst case?",
       "options": ["Quick", "Merge", "Insertion", "Bubble"],
       "answer": 1,
-      "hint": "Regardless of input."
+      "hint": "Worst-case safe."
     },
     {
-      "question": "Why Selection Sort is rarely used?",
-      "options": [
-        "Too many swaps",
-        "Not stable",
-        "Slow for large n",
-        "High memory"
-      ],
+      "question": "Why is Selection Sort rarely used?",
+      "options": ["Too many swaps", "Not stable", "Slow for large n", "High memory"],
       "answer": 2,
-      "hint": "Time complexity issue."
+      "hint": "Quadratic time."
     },
     {
-      "question": "Why Selection Sort is rarely used?",
-      "options": [
-        "Too many swaps",
-        "Not stable",
-        "Slow for large n",
-        "High memory"
-      ],
-      "answer": 2,
-      "hint": "Time complexity issue."
+      "question": "Insertion Sort runs close to O(n) when?",
+      "options": ["Nearly sorted", "Reverse sorted", "Random", "Large input"],
+      "answer": 0,
+      "hint": "Few shifts."
+    },
+    {
+      "question": "Main reason Quick Sort hits worst-case?",
+      "options": ["Extra memory", "Bad pivot repeatedly", "Duplicates", "Recursion depth"],
+      "answer": 1,
+      "hint": "Unbalanced partitions."
     }
   ]
 }
