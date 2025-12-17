@@ -138,6 +138,17 @@
       ],
       "answer": 2,
       "hint": "Time complexity issue."
+    },
+    {
+      "question": "Why Selection Sort is rarely used?",
+      "options": [
+        "Too many swaps",
+        "Not stable",
+        "Slow for large n",
+        "High memory"
+      ],
+      "answer": 2,
+      "hint": "Time complexity issue."
     }
   ]
 }
