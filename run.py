@@ -3,7 +3,7 @@ from src.player import Player
 from src.game import GameEngine
 
 levels = load_levels_csv("data/levels.csv")
-player = Player(name="Meeval")
+player = Player(name="Stevens")
 engine = GameEngine()
 
 engine.run_main_menu(player, levels)
