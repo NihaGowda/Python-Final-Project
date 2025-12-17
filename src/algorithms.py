@@ -1,9 +1,4 @@
-"""
-algorithms.py
 
-Sorting algorithms that return (sorted_list, SortMetrics).
-Includes a generator function for step-by-step visualization.
-"""
 
 from __future__ import annotations
 from typing import Generator
