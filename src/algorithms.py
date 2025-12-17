@@ -13,19 +13,19 @@ def insertion_sort(arr: list[int]) -> tuple[list[int], SortMetrics]:
     start = time.perf_counter()
 
     for i in range(1, len(a)):
-        key = a[i]
+        keys = a[i]
         j = i - 1
 
         while j >= 0:
             m.comparisons += 1
-            if a[j] > key:
+            if a[j] > keys:
                 a[j + 1] = a[j]
                 m.swaps += 1
                 j -= 1
             else:
                 break
 
-        a[j + 1] = key
+        a[j + 1] = keys
 
     m.time_ms = (time.perf_counter() - start) * 1000
     return a, m
