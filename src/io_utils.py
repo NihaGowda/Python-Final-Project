@@ -64,6 +64,7 @@ def load_levels_csv(csv_path: str | Path) -> list[Level]:
 
 def save_history_json(history: list[dict], out_path: str | Path) -> None:
     """Save player run history to JSON (meaningful output I/O)."""
-    Path(out_path).parent.mkdir(parents=True, exist_ok=True)
+    out_path = Path(out_path)
+    out_path.parent.mkdir(parents=True, exist_ok=True)
     with open(out_path, "w", encoding="utf-8") as f:
-        json.dump(history, f, indent=2)
+        json.dump(history, f, indent=2, ensure_ascii=False)
