@@ -1,0 +1,143 @@
+{
+  "easy": [
+    {
+      "question": "What is the average time complexity of Insertion Sort?",
+      "options": ["O(n)", "O(n log n)", "O(n^2)", "O(log n)"],
+      "answer": 2,
+      "hint": "Think about nested loops."
+    },
+    {
+      "question": "Which sorting algorithm is stable?",
+      "options": ["Quick Sort", "Merge Sort", "Selection Sort", "Heap Sort"],
+      "answer": 1,
+      "hint": "Stable means equal elements keep order."
+    },
+    {
+      "question": "Which algorithm compares adjacent elements?",
+      "options": ["Merge Sort", "Quick Sort", "Bubble Sort", "Selection Sort"],
+      "answer": 2,
+      "hint": "It swaps neighbors repeatedly."
+    },
+    {
+      "question": "Best case of Insertion Sort happens when array is?",
+      "options": ["Random", "Reverse", "Already sorted", "All equal"],
+      "answer": 2,
+      "hint": "Minimal shifting needed."
+    },
+    {
+      "question": "Which algorithm uses divide and conquer?",
+      "options": ["Bubble", "Insertion", "Merge", "Selection"],
+      "answer": 2,
+      "hint": "Splits array into halves."
+    },
+    {
+      "question": "Bubble Sort worst-case time complexity?",
+      "options": ["O(n)", "O(n log n)", "O(n^2)", "O(log n)"],
+      "answer": 2,
+      "hint": "Two nested loops."
+    },
+    {
+      "question": "Insertion Sort is good for?",
+      "options": ["Large random arrays", "Nearly sorted arrays", "Huge datasets", "Graphs"],
+      "answer": 1,
+      "hint": "Few shifts needed."
+    }
+  ],
+
+  "medium": [
+    {
+      "question": "Why is Merge Sort stable?",
+      "options": [
+        "It swaps elements",
+        "Equal elements keep order",
+        "It is in-place",
+        "It uses recursion"
+      ],
+      "answer": 1,
+      "hint": "Look at merge step behavior."
+    },
+    {
+      "question": "Worst-case time complexity of Quick Sort?",
+      "options": ["O(n)", "O(n log n)", "O(n^2)", "O(log n)"],
+      "answer": 2,
+      "hint": "Unbalanced partitions."
+    },
+    {
+      "question": "Which algorithm minimizes number of swaps?",
+      "options": ["Bubble", "Insertion", "Selection", "Merge"],
+      "answer": 2,
+      "hint": "Swaps once per position."
+    },
+    {
+      "question": "Space complexity of Merge Sort?",
+      "options": ["O(1)", "O(log n)", "O(n)", "O(n^2)"],
+      "answer": 2,
+      "hint": "Extra array needed."
+    },
+    {
+      "question": "Which algorithm uses a pivot?",
+      "options": ["Merge", "Quick", "Insertion", "Bubble"],
+      "answer": 1,
+      "hint": "Partition-based."
+    },
+    {
+      "question": "Why Quick Sort is fast in practice?",
+      "options": [
+        "Stable",
+        "Low constant factors",
+        "No recursion",
+        "Always balanced"
+      ],
+      "answer": 1,
+      "hint": "Not theoretical, practical reason."
+    }
+  ],
+
+  "hard": [
+    {
+      "question": "When does Quick Sort degrade to O(n^2)?",
+      "options": [
+        "Balanced pivot",
+        "Random data",
+        "Already sorted data",
+        "Small input"
+      ],
+      "answer": 2,
+      "hint": "Worst pivot choice."
+    },
+    {
+      "question": "Why Merge Sort is preferred for linked lists?",
+      "options": [
+        "In-place",
+        "Sequential access",
+        "Less memory",
+        "No recursion"
+      ],
+      "answer": 1,
+      "hint": "No random access required."
+    },
+    {
+      "question": "Which sort is NOT stable?",
+      "options": ["Merge", "Insertion", "Selection", "Bubble"],
+      "answer": 2,
+      "hint": "Swaps break order."
+    },
+    {
+      "question": "Which algorithm has guaranteed O(n log n)?",
+      "options": ["Quick", "Merge", "Insertion", "Bubble"],
+      "answer": 1,
+      "hint": "Regardless of input."
+    },
+    {
+      "question": "Why Selection Sort is rarely used?",
+      "options": [
+        "Too many swaps",
+        "Not stable",
+        "Slow for large n",
+        "High memory"
+      ],
+      "answer": 2,
+      "hint": "Time complexity issue."
+    }
+  ]
+}
