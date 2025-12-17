@@ -27,7 +27,6 @@ class SortMetrics:
         )
 
     def __str__(self) -> str:
-        return f"SortMetrics(comparisons={self.comparisons}, swaps={self.swaps}, time_ms={self.time_ms:.3f})"
         return (
             f"SortMetrics(comparisons={self.comparisons}, "
             f"swaps={self.swaps}, time_ms={self.time_ms:.3f})"
